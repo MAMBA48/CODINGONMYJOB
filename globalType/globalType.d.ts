@@ -1,0 +1,3 @@
+type basicFunction = () => void;
+
+type;
