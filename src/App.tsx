@@ -1,7 +1,7 @@
 //testando
 const App = () => {
   return (
-    <main>
+    <main className="container">
       <h2>Pagina Inicial</h2>
     </main>
   );
