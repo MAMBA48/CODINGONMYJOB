@@ -1,0 +1,20 @@
+{
+  "bot": [
+    {
+      "avatar": "",
+      "name_bot": "BOT_pru"
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "question": "",
+      "order": "first"
+    },
+    {
+      "id": "2",
+      "question": "",
+      "order": "second"
+    }
+  ]
+}
