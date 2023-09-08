@@ -3,6 +3,8 @@ import { styled } from 'styled-components';
 
 const Span = styled.span`
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 2px 6px 0px #000;

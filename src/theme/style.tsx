@@ -60,6 +60,7 @@ body {
 }
 .container {
   display: flex;
+  margin-top: 20px;
   flex-direction: column;
 }
 .content-app {
