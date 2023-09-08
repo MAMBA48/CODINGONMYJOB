@@ -5,7 +5,7 @@ const Span = styled.span`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid #000;
+  box-shadow: 0px 2px 6px 0px #000;
   padding: 30px;
 `;
 type BasicType = () => void;
@@ -20,7 +20,7 @@ const Game = () => {
   const [bot, setBot] = useState<boolean>(false);
   const playGame: BasicType = () => setPlay(true);
   const botUser: BasicType = () => {
-    alert('botUser is ok!');
+    alert('received sucessfull');
   };
 
   return (
@@ -47,18 +47,10 @@ const Game = () => {
             </span>
             <p>{time} Voce conhece o continente onde habita?</p>
             <span>
-              <button
-                onClick={() => alert('received sucessfull')}
-                id="answer"
-                value="yes"
-              >
+              <button onClick={botUser} id="answer" value="yes">
                 sim
               </button>
-              <button
-                onClick={() => alert('received sucessfull')}
-                id="answer"
-                value="no"
-              >
+              <button onClick={botUser} id="answer" value="no">
                 não
               </button>
             </span>
