@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { styled } from 'styled-components';
 
 const Span = styled.span`
@@ -24,6 +24,31 @@ const Game = () => {
   const botUser: BasicType = () => {
     alert('received sucessfull');
   };
+  type infoType = {
+    name: string;
+    url?: string;
+    img: string;
+  };
+  const [data, setData] = useState<infoType>({ name: '', url: '', img: '' });
+  useEffect(() => {
+    const gitInfo = async ({ name, url, img }: infoType) => {
+      const reqApi = await fetch('https://api.github.com/users/mamba48');
+      const data = await reqApi.json();
+      setData({
+        img: data.avatar_url,
+        name: data.name,
+        url: data.html_url,
+      });
+      return (
+        <>
+          <p>{img}</p>
+          <p>{data.name}</p>
+          <p>{url}</p>
+        </>
+      );
+    };
+    gitInfo(data);
+  }, []);
 
   return (
     <>
