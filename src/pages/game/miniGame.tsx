@@ -81,6 +81,7 @@ const Game = () => {
                 não
               </button>
             </span>
+            {}
           </Span>
         )}
       </article>

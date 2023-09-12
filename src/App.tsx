@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, createContext } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from './components/header/header';
+
+export const MyContext = createContext(0);
 
 const App = () => {
   const [user, setUser] = useState(null);

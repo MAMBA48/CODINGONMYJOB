@@ -8,6 +8,15 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   border-radius: 8px;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgba(14, 15, 17, 0.89);
+  color: aliceblue;
+}
 a {
   cursor: pointer;
   border: 1px solid transparent;
@@ -49,17 +58,9 @@ header {
   padding: 20px;
   background: #000;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: rgba(14, 15, 17, 0.89);
-  color: aliceblue;
-}
 .container {
   display: flex;
+  transition: 1s all;
   margin-top: 20px;
   flex-direction: column;
 }
